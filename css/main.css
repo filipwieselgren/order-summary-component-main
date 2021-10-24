@@ -19,8 +19,8 @@ body {
 }
 
 .main-container {
-  height: 80%;
-  width: 260px;
+  height: 75%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -34,23 +34,20 @@ body {
   box-shadow: 0px 2px 50px #1e21c536;
 }
 .main-container .txt-container {
-  border-radius: 30px;
-  height: 70%;
+  height: 53vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  position: relative;
+  gap: 10px;
 }
 .main-container .headline {
   color: #172039;
-  font-size: 1.1rem;
-  position: absolute;
-  top: 20px;
+  font-size: 1.2rem;
 }
 .main-container .maintxt {
-  line-height: 18px;
+  line-height: 20px;
   font-size: 0.8rem;
   padding: 5px;
   width: 80%;
@@ -59,22 +56,22 @@ body {
 .main-container .plan-container {
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  justify-content: space-evenly;
+  font-size: 0.7rem;
   border: none;
   background-color: #f8f9fe;
   border-radius: 10px;
   width: 80%;
-  padding: 10px;
+  padding: 20px;
 }
 .main-container .annual-plan-contianer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100px;
-  margin-right: 20px;
+  width: 60%;
 }
 .main-container .annual-plan-contianer .annual-plan {
-  line-height: 20px;
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .main-container .annual-plan-contianer .annual-plan span {
   color: #6d7184;
@@ -82,6 +79,7 @@ body {
 .main-container img {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 .main-container .btn-pay {
   width: 80%;
@@ -90,7 +88,7 @@ body {
   border: none;
   background-color: #352ad8;
   color: white;
-  box-shadow: 0px 2px 10px #362ad883;
+  box-shadow: 0px 10px 20px #362ad844;
   font-size: 0.7rem;
 }
 .main-container .btn-pay a {
@@ -101,12 +99,43 @@ body {
   border: none;
   background: none;
   font-size: 0.7rem;
-  position: absolute;
-  bottom: 25px;
 }
 .main-container .btn-cancel a {
   color: #7985a4;
   text-decoration: none;
+}
+
+/*----Desktop/Ipad----*/
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e1e8fd;
+  }
+  body .main-container {
+    height: 70%;
+    width: 25%;
+    border-radius: 15px;
+    justify-content: center !important;
+    align-items: flex-end !important;
+  }
+  body .txt-container {
+    gap: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  body .headline {
+    font-size: 1.5rem !important;
+  }
+  body .maintxt {
+    font-size: 1rem !important;
+    width: 80% !important;
+  }
+  body .annual-plan-contianer {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
